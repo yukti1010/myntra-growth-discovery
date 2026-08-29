@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myntra Growth PM Discovery Engine</title>
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+</head>
+<body style="margin: 0; padding: 0; background: #0f172a;">
+  <div id="n8n-chat"></div>
+
+  <script type="module">
+    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+    createChat({
+      webhookUrl: 'https://myntradiscovery.app.n8n.cloud/webhook/89deff80-8185-4db8-9778-c2d8799486ef/chat',
+      target: '#n8n-chat',
+      mode: 'fullscreen',
+      showWelcomeScreen: false,
+      i18n: {
+        en: {
+          title: 'Myntra Growth PM Discovery Engine',
+          subtitle: 'Wishlist drop-off discovery across fit, fabric, styling & choice paralysis.',
+          inputPlaceholder: 'Type your question..',
+        },
+      },
+    });
+  </script>
+</body>
+</html>
